@@ -22,19 +22,19 @@ CPRE339_Final_Project
 
 ### Game Screenshot:
 
-Menu Page
+####Menu Page
 
 ![alt text](https://github.com/piaobojj/Cpre339Final/blob/master/Screenshot/screen1.png "Logo Title Text 1")
 
-Game Start
+####Game Start
 
 ![alt text](https://github.com/piaobojj/Cpre339Final/blob/master/Screenshot/screen2.png "Logo Title Text 1")
 
-Game Play - Avoid the object
+####Game Play - Avoid the object
 
 ![alt text](https://github.com/piaobojj/Cpre339Final/blob/master/Screenshot/screen3.png "Logo Title Text 1")
 
-Game Over
+####Game Over
 
 ![alt text](https://github.com/piaobojj/Cpre339Final/blob/master/Screenshot/screen4.png "Logo Title Text 1")
 
