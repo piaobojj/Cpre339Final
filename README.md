@@ -22,9 +22,21 @@ CPRE339_Final_Project
 
 ### Game Screenshot:
 
+Menu Page
+
 ![alt text](https://github.com/piaobojj/Cpre339Final/blob/master/Screenshot/screen1.png "Logo Title Text 1")
 
-Reference-style: 
+Game Start
+
+![alt text](https://github.com/piaobojj/Cpre339Final/blob/master/Screenshot/screen2.png "Logo Title Text 1")
+
+Game Play - Avoid the object
+
+![alt text](https://github.com/piaobojj/Cpre339Final/blob/master/Screenshot/screen3.png "Logo Title Text 1")
+
+Game Over
+
+![alt text](https://github.com/piaobojj/Cpre339Final/blob/master/Screenshot/screen4.png "Logo Title Text 1")
 
 
 
