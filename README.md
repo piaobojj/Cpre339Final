@@ -1,5 +1,6 @@
 # Cpre339Final
 CPRE339_Final_Project
+<br>By: Wen-Chi Hsu.
 <br>Android Game application.
 
 ### Description:
@@ -19,5 +20,7 @@ CPRE339_Final_Project
   Design patterns
       TODO
 
+### Game Screenshot:
 
-By: Wen-Chi Hsu.
+
+
