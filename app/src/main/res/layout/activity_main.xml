@@ -27,6 +27,18 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="25dp" />
 
+    <TextView
+        android:text='"PRESS DOWN AND HOlD TO GO UP, RELEASE TO GO DOWN,EARN HEATH SHIELD TO INCREASE HP, 2 TYPE OF ENEMY: BIG ENEMY DAMAGE BY 2 AND SMALL ENEMY DAMAGE BY 1. "'
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:height="90dp"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/startBtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2" />
+
     <Button
         android:text="PLAY"
         android:layout_width="wrap_content"
@@ -34,10 +46,10 @@
         android:id="@+id/startBtn"
         android:background="@drawable/customfuntion"
         android:width="125dp"
-        android:height="70dp"
+        android:height="50dp"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:layout_marginBottom="7dp"
+        android:layout_marginBottom="13dp"
         android:layout_above="@+id/exitBtn"
         android:layout_alignLeft="@+id/exitBtn"
         android:layout_alignStart="@+id/exitBtn" />
@@ -49,14 +61,28 @@
         android:id="@+id/exitBtn"
         android:background="@drawable/customfuntion"
         android:width="125dp"
-        android:height="70dp"
+        android:height="50dp"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:layout_marginLeft="52dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="55dp"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/imageView2"
         android:layout_toEndOf="@+id/imageView2" />
+
+    <TextView
+        android:text="Super Dodge Man Beta 1.0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp" />
+
 
 </RelativeLayout>
