@@ -22,5 +22,9 @@ CPRE339_Final_Project
 
 ### Game Screenshot:
 
+![alt text](https://github.com/piaobojj/Cpre339Final/blob/master/Screenshot/screen1.png "Logo Title Text 1")
+
+Reference-style: 
+
 
 
