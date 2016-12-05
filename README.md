@@ -31,8 +31,21 @@ Inter-processes/threads communication
       
 Design patterns <br>
       
-![alt text](https://github.com/piaobojj/Cpre339Final/blob/master/Screenshot/uml-aprove.png" Logo Title Text 1")
-      Example: 
+    public class GameView extends SurfaceView implements SurfaceHolder.Callback{
+
+       //reference variable
+       private MainGameThread mainGameThread;
+       //Some pictures can not be stretched on the drawable-nodpi, it will not be enlarged to the original size.
+       private Resources res;
+
+       /* Variable for Background ---------------------------------------------------------------*/
+       //Set background image is 856X480 png image
+       private Background background;
+       public static final int width = 1223;
+       public static final int height = 480;
+       // Background moving scrolling speed
+       public static final int scrollingSpeed = -6;
+
 
 ### Game Screenshot:
 
