@@ -32,9 +32,9 @@ Inter-processes/threads communication
       ======
 Design patterns <br>
 
-     Those are the snip shop of the code for indicated the implementation of the Class Diagram design.
+  <p>   Those are the snip shop of the code for indicated the implementation of the Class Diagram design.
      Detail of src code: https://github.com/piaobojj/Cpre339Final/tree/master/app/src/main/java/project/cpre339final
-     Detail of Class Diagram: https://github.com/piaobojj/Cpre339Final/blob/master/Deliverable-4/Cpre339%20Class%20Diagram(1).pdf
+     Detail of Class Diagram: https://github.com/piaobojj/Cpre339Final/blob/master/Deliverable-4/Cpre339%20Class%20Diagram(1).pdf </p>
       
     /* This class has extend abstract SurfaceView and has the class of MainGameThread and GameBackground object 
        which reference from the class UML diagram design. */  
