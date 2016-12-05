@@ -26,10 +26,59 @@ Implement defensive programming
 Code smells
       TODO
       
-Inter-processes/threads communication
-      TODO
+#### Threads communication <br>
       
-      ======
+      /* This the game view class, all the actual chemistry happens here so the
+      * result of interaction with the View produces an image.*/
+  
+      public class GameView extends SurfaceView implements SurfaceHolder.Callback{
+
+       //reference thread variable
+       private MainGameThread mainGameThread;
+
+        /*
+        * To be able to "moving", need to use complex threads through the thread continues
+        * to change the image of the coordinates and paste the pictures or image over and over again.
+        * */
+       public void surfaceCreated(SurfaceHolder holder){
+       
+        //create the game loop thread
+        mainGameThread = new MainGameThread(getHolder(),this);
+
+        //Set the running flag to true and we start up the thread
+        mainGameThread.setRunning(true);
+        mainGameThread.start();
+       }
+       
+         /*
+        * This method is called directly before the surface is destroyed.
+        * It is not the place to set the running flag but in ensures that 
+        * the thread shuts down cleanly.
+        * Block the thread and wait for it to destroyed.
+        * */
+       public void surfaceDestroyed(SurfaceHolder holder){
+
+           boolean retry = true;
+           //to prevent the infinite loop we setup the counter
+           int counter = 0;
+           while(retry && counter < 1000){
+
+               try {
+                   counter ++;
+                   mainGameThread.setRunning(false);
+                   mainGameThread.join();
+                   retry = false;
+                   //Set null so garbage collector can pick up the object
+                   mainGameThread = null;
+               }catch(InterruptedException e) {e.printStackTrace();}
+               // try again shutting down the thread
+           }
+       }
+       
+       
+      }
+      
+      
 #### Design patterns <br>
 
   <p>   Those are the snip shop of the code for indicated the implementation of the Class Diagram design.<br>
