@@ -34,7 +34,7 @@ Design patterns <br>
 
   <p>   Those are the snip shop of the code for indicated the implementation of the Class Diagram design.
      Detail of src code: https://github.com/piaobojj/Cpre339Final/tree/master/app/src/main/java/project/cpre339final
-     Detail of Class Diagram: https://github.com/piaobojj/Cpre339Final/blob/master/Deliverable-4/Cpre339%20Class%20Diagram(1).pdf </p>
+     <br>Detail of Class Diagram: https://github.com/piaobojj/Cpre339Final/blob/master/Deliverable-4/Cpre339%20Class%20Diagram(1).pdf </p>
       
     /* This class has extend abstract SurfaceView and has the class of MainGameThread and GameBackground object 
        which reference from the class UML diagram design. */  
@@ -48,13 +48,9 @@ Design patterns <br>
        /* Variable for Background ---------------------------------------------------------------*/
        //Set background image is 856X480 png image
        private Background background;
-       public static final int width = 1223;
-       public static final int height = 480;
-       // Background moving scrolling speed
-       public static final int scrollingSpeed = -6;
        
        <br>
-       
+       --------------------------------------------------------------------------------------------------------------
        /*  This is the moving object class that 
         *  will hold image and the coordinates. */
      
@@ -64,11 +60,11 @@ Design patterns <br>
        attributes coordinates of the object we made*/
        }
        
-       /*To be able to re-create the moving animation, we called this sprite, we need to load up each frame as a separate image
-      and display them at regular intervals one after each other. or load up the big image containing all the frames
-      and use the methods provided by android cut them into a piece and display only the relevant frame.*/
+       --------------------------------------------------------------------------------------------------------------
+       /*  This is the re-create the moving animation class that 
+        *  load up each frame as a separate image. */
 
-      public class SpriteAnimation { *****For more detail **** }
+      public class SpriteAnimation {  }
        
        
      
