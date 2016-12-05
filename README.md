@@ -20,18 +20,18 @@ CPRE339_Final_Project
 </ul> 
 ### Software Architecture and Design Techniques Use:
 
-  ##Implement defensive programming
+##Implement defensive programming
+      TODO
+
+##Code smells
       TODO
       
-  ##Code smells
+##Inter-processes/threads communication
       TODO
       
-  ##Inter-processes/threads communication
-      TODO
-      
-  ##Design patterns <br>
+##Design patterns <br>
       Most of class created based on the class UML diagram. <br>
-      ![alt text](https://github.com/piaobojj/Cpre339Final/blob/master/Screenshot/uml-approve.png "Logo Title Text 1")
+      ![alt text](https://github.com/piaobojj/Cpre339Final/blob/master/Screenshot/uml-aprove.png "Logo Title Text 1")
       Example: 
 
 ### Game Screenshot:
