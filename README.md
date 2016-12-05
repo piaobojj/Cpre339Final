@@ -31,9 +31,15 @@ Inter-processes/threads communication
       
       ======
 Design patterns <br>
-      
-    public class GameView extends SurfaceView implements SurfaceHolder.Callback{
 
+     Those are the snip shop of the code for indicated the implementation of the Class Diagram design.
+     Detail of src code: https://github.com/piaobojj/Cpre339Final/tree/master/app/src/main/java/project/cpre339final
+     Detail of Class Diagram: https://github.com/piaobojj/Cpre339Final/blob/master/Deliverable-4/Cpre339%20Class%20Diagram(1).pdf
+      
+    /* This class has extend abstract SurfaceView and has the class of MainGameThread and GameBackground object 
+       which reference from the class UML diagram design. */  
+    public class GameView extends SurfaceView implements SurfaceHolder.Callback{
+       
        //reference variable
        private MainGameThread mainGameThread;
        //Some pictures can not be stretched on the drawable-nodpi, it will not be enlarged to the original size.
@@ -46,6 +52,26 @@ Design patterns <br>
        public static final int height = 480;
        // Background moving scrolling speed
        public static final int scrollingSpeed = -6;
+       
+       <br>
+       
+       /*  This is the moving object class that 
+        *  will hold image and the coordinates. */
+     
+      public abstract class MovingObject {
+
+      /*Every single object will have x,y,width and height, so we need
+       attributes coordinates of the object we made*/
+       }
+       
+       /*To be able to re-create the moving animation, we called this sprite, we need to load up each frame as a separate image
+      and display them at regular intervals one after each other. or load up the big image containing all the frames
+      and use the methods provided by android cut them into a piece and display only the relevant frame.*/
+
+      public class SpriteAnimation { *****For more detail **** }
+       
+       
+     
 
 
 ### Game Screenshot:
