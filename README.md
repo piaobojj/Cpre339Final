@@ -29,8 +29,10 @@ CPRE339_Final_Project
   Inter-processes/threads communication
       TODO
       
-  Design patterns
-      TODO
+  Design patterns <br>
+      Most of class created based on the class UML diagram. <br>
+      ![alt text](https://github.com/piaobojj/Cpre339Final/blob/master/Screenshot/prove.png "Logo Title Text 1")
+      Example: 
 
 ### Game Screenshot:
 
