@@ -14,7 +14,7 @@ CPRE339_Final_Project
   <li>Deliverable-2 (contains new updated C&C and module decomposition diagram)</li>
   <li>Deliverable-3 (contains new update class and usecas diagram)</li>
   <li>Screenshot (the actual game play overview)</li>
-  <li>handwrite script (chartecter and object design )</li>
+  <li>Handwrite script (chartecter and object design )</li>
 </ul> 
 ### Software Architecture and Design Techniques Use:
 
