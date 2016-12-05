@@ -36,19 +36,7 @@ Inter-processes/threads communication
      Detail of src code: https://github.com/piaobojj/Cpre339Final/tree/master/app/src/main/java/project/cpre339final
      <br>Detail of Class Diagram: https://github.com/piaobojj/Cpre339Final/blob/master/Deliverable-4/Cpre339%20Class%20Diagram(1).pdf </p>
       
-    /* This class has extend abstract SurfaceView and has the class of MainGameThread and GameBackground object 
-       which reference from the class UML diagram design. */  
-    public class GameView extends SurfaceView implements SurfaceHolder.Callback{
-       
-       //reference variable
-       private MainGameThread mainGameThread;
-       //Some pictures can not be stretched on the drawable-nodpi, it will not be enlarged to the original size.
-       private Resources res;
-
-       /* Variable for Background ---------------------------------------------------------------*/
-       //Set background image is 856X480 png image
-       private Background background;
-       
+      
        <br>
        ----------------------------------Abstract Class------------------------------------------
        /*  This is the moving object class that 
@@ -60,46 +48,48 @@ Inter-processes/threads communication
        attributes coordinates of the object we made*/
        }
        
-       ------------------------------------------------------------------------------------------
+       /* Bitmap*/
+       public bitmap class provide by java library
+       
+       -----------------------------------Animation Class----------------------------------------
        /*  This is the re-create the moving animation class that 
         *  load up each frame as a separate image. */
 
       public class SpriteAnimation {  }
       
-      -------------------------------------------------------------------------------------------
+      ------------------------------------Class that are implment and extends--------------------
        
-       /**
-       * Enemy class: while the player playing the game, the score increase the difficultly of the game increase.
-       * Enemy speed go faster and amounts of enemy increase too.
-       */
+       /*This is enemy character class */
       public class Enemy extends MovingObject{
 
-       // Graphical objects handled separately from the memory bitmap, aka animation
-       private Bitmap bitmap; //the animation sequence know as sprite sheet
-       //the speed of enemy go
-       private int speedOfEnemy;
-       //randomly appear on the screen for enemy
-       private Random rand = new Random();
-       //Animation
-       private SpriteAnimation animation = new SpriteAnimation(); //give the object we create some animation
-       //get score
-       private int gameScore;
+         //the animation sequence know as sprite sheet
+         private Bitmap bitmap;
+         //give the object we create some animation
+         private SpriteAnimation animation = new SpriteAnimation(); 
+      
+       }
        
        /*This is game character class */
       public class dodgeMan extends MovingObject{
-
-          // Graphical objects handled separately from the memory bitmap, aka animation
-          private Bitmap bitmap; //the animation sequence know as sprite sheet
-          //moving motion
-          private boolean goingUp;   //acceleration upper down
-          private boolean playing;  // is player playing ?
-          //time tracking
-          private int gameScore;   //tracking the game score
-          private long beginTime; // whenever the game starter, calculate increment the score
-          //Animation
-          private SpriteAnimation animation = new SpriteAnimation(); //give the object we create some animation
+      
+         //the animation sequence know as sprite sheet
+         private Bitmap bitmap;
+         //give the object we create some animation
+         private SpriteAnimation animation = new SpriteAnimation(); 
+          
+       }
+       
+       /*This is class control the expolsion  */
+       public class Boom {
+       
+         //the animation sequence know as sprite sheet
+         private Bitmap bitmap;
+         //give the object we create some animation
+         private SpriteAnimation animation = new SpriteAnimation(); 
+       
+       }
      
-
+        -----------------------------------------------------------------------------------------
 
 ### Game Screenshot:
 
