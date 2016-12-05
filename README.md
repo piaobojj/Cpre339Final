@@ -30,9 +30,9 @@ Inter-processes/threads communication
       TODO
       
       ======
-Design patterns <br>
+#### Design patterns <br>
 
-  <p>   Those are the snip shop of the code for indicated the implementation of the Class Diagram design.
+  <p>   Those are the snip shop of the code for indicated the implementation of the Class Diagram design.<br>
      Detail of src code: https://github.com/piaobojj/Cpre339Final/tree/master/app/src/main/java/project/cpre339final
      <br>Detail of Class Diagram: https://github.com/piaobojj/Cpre339Final/blob/master/Deliverable-4/Cpre339%20Class%20Diagram(1).pdf </p>
       
@@ -50,7 +50,7 @@ Design patterns <br>
        private Background background;
        
        <br>
-       --------------------------------------------------------------------------------------------------------------
+       ----------------------------------Abstract Class------------------------------------------
        /*  This is the moving object class that 
         *  will hold image and the coordinates. */
      
@@ -60,13 +60,44 @@ Design patterns <br>
        attributes coordinates of the object we made*/
        }
        
-       --------------------------------------------------------------------------------------------------------------
+       ------------------------------------------------------------------------------------------
        /*  This is the re-create the moving animation class that 
         *  load up each frame as a separate image. */
 
       public class SpriteAnimation {  }
+      
+      -------------------------------------------------------------------------------------------
        
+       /**
+       * Enemy class: while the player playing the game, the score increase the difficultly of the game increase.
+       * Enemy speed go faster and amounts of enemy increase too.
+       */
+      public class Enemy extends MovingObject{
+
+       // Graphical objects handled separately from the memory bitmap, aka animation
+       private Bitmap bitmap; //the animation sequence know as sprite sheet
+       //the speed of enemy go
+       private int speedOfEnemy;
+       //randomly appear on the screen for enemy
+       private Random rand = new Random();
+       //Animation
+       private SpriteAnimation animation = new SpriteAnimation(); //give the object we create some animation
+       //get score
+       private int gameScore;
        
+       /*This is game character class */
+      public class dodgeMan extends MovingObject{
+
+          // Graphical objects handled separately from the memory bitmap, aka animation
+          private Bitmap bitmap; //the animation sequence know as sprite sheet
+          //moving motion
+          private boolean goingUp;   //acceleration upper down
+          private boolean playing;  // is player playing ?
+          //time tracking
+          private int gameScore;   //tracking the game score
+          private long beginTime; // whenever the game starter, calculate increment the score
+          //Animation
+          private SpriteAnimation animation = new SpriteAnimation(); //give the object we create some animation
      
 
 
