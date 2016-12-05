@@ -3,14 +3,18 @@ CPRE339_Final_Project
 <br>By: Wen-Chi Hsu.
 <br>Android Game application.
 
-### Description:
+### Goal:
+   Expected to perform from high-level architecture design to detailed software development and/or implementation, and applying what we have learned into software development practice. 
+
+### Idea:
    The game will be developed in the 2D scrolling style similar like Raiden Fighter https://www.youtube.com/watch?v=CsD-FNjPOmk , which the player is required to move it up and down, be able to obstacles the object and doget various kinds of enemies along the way.
    
-### Doucmentation
+### Doucmentation:
 <ul>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
+  <li>Deliverable-2 (contains new updated C&C and module decomposition diagram)</li>
+  <li>Deliverable-3 (contains new update class and usecas diagram)</li>
+  <li>Screenshot (the actual game play overview)</li>
+  <li>handwrite script (chartecter and object design )</li>
 </ul> 
 ### Software Architecture and Design Techniques Use:
 
