@@ -28,7 +28,7 @@ Code smells
       
 #### Threads communication <br>
       
-      /* This the game view class, all the actual chemistry happens here so the
+      /* This is the game view class, all the actual chemistry happens here so the
       * result of interaction with the View produces an image.*/
   
       public class GameView extends SurfaceView implements SurfaceHolder.Callback{
