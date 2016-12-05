@@ -9,8 +9,8 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button start;
-    Button exit;
+    private Button start;
+    private Button exit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

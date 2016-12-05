@@ -490,19 +490,12 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback{
             paint3.setStyle(Paint.Style.FILL);
             paint2.setTextSize(55);
             paint3.setTextSize(57);
-            //canvas.drawText("DODGE MAN", width / 2 - 130, height / 2 - 50, paint2);
-            //canvas.drawText("DODGE MAN", width / 2 - 133, height / 2 - 50, paint3);
 
             paint1.setTextSize(40);
             paint1.setTypeface(Typeface.create(Typeface.SANS_SERIF, Typeface.BOLD_ITALIC));
             canvas.drawText("PRESS TO START", width / 2 - 120, height / 2 - 3, paint1);
 
             paint1.setTextSize(18);
-            //canvas.drawText("PRESS DOWN AND HOlD TO GO UP", width/2-120, height/2 + 27, paint1);
-            //canvas.drawText("RELEASE TO GO DOWN", width / 2 - 120, height / 2 + 45, paint1);
-            //canvas.drawText("EARN HEATH SHIELD TO INCREASE HP", width/2-120, height/2 + 62, paint1);
-            //canvas.drawText("2 TYPE OF ENEMY: BIG ENEMY DAMAGE BY 2 AND " +
-                   // "SMALL ENEMY DAMAGE BY 1", width/2-120, height/2 + 80, paint1);
         }
 
     }
