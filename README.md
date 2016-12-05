@@ -29,6 +29,7 @@ Code smells
 Inter-processes/threads communication
       TODO
       
+      ======
 Design patterns <br>
       
     public class GameView extends SurfaceView implements SurfaceHolder.Callback{
