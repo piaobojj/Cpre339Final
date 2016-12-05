@@ -2,6 +2,7 @@
 CPRE339_Final_Project
 <br>By: Wen-Chi Hsu.
 <br>Android Game application.
+<br>Last Modified: 12/05/2016
 
 ### Goal:
    Expected to perform from high-level architecture design to detailed software development and/or implementation, and applying what we have learned into software development practice. 
@@ -13,6 +14,7 @@ CPRE339_Final_Project
 <ul>
   <li>Deliverable-2 (contains new updated C&C and module decomposition diagram)</li>
   <li>Deliverable-3 (contains new update class and usecas diagram)</li>
+  <li>Demo-Video (Briefly describe the design implementation / code sample / actual game play)</li>
   <li>Screenshot (the actual game play overview)</li>
   <li>Handwrite script (chartecter and object design )</li>
 </ul> 
