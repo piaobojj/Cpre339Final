@@ -26,7 +26,8 @@ CPRE339_Final_Project
             for(int i = 0; i<enemies.size();i++){
 
                 enemies.get(i).updateEnemyState();
-                //if the dodge_man hit the enemies which mean damage by enemies, health level going down 1
+                //if the dodge_man hit the enemies which mean damage by enemies, health level 
+                //going down 1
                 if(collision(enemies.get(i), dodge_man)){
                     //remove enemies
                     enemies.remove(i);
@@ -36,8 +37,9 @@ CPRE339_Final_Project
                     boomSound();
                     break;
                 }
-                //so if enemies is way off the screen remove it break loop  <----- to avoid the enemies go too far
-                if (enemies.get(i).getXDirection() <- 100){                        away, break remove it
+                //so if enemies is way off the screen      <----- to avoid the enemies go too far
+                //remove it break loop                              away, break remove it
+                if (enemies.get(i).getXDirection() <- 100){                       
                     enemies.remove(i);
                     break;                       
                 }
