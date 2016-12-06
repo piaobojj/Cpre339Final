@@ -25,9 +25,12 @@ Implement defensive programming
 
 #### Code smells <br>
 
-      When I started code the object class in the very beiging development periods, Classes usually start small. But over time, they get bloated as the program grows and for easy testing I usually just put all the require variable and method toghter. To resolve the long class and long method, 
+      When I started code the object class in the very beiging development periods, Classes usually start 
+      small. But over time, they get bloated as the program grows and for easy testing I usually just put 
+      all the require variable and method toghter. To resolve the long class and long method, 
       <br>
-     Extract all the object class which need the animation and moving detecting. <br> Split to the abstract class which we got two class <MovingObject Class> <SpriteAnimation>. 
+     Extract all the object class which need the animation and moving detecting. <br> Split to the abstract 
+     class which we got two class <MovingObject Class> <SpriteAnimation>. 
      
      
       
