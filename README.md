@@ -21,30 +21,6 @@ CPRE339_Final_Project
 ### Software Architecture and Design Techniques Use:
 
 #### Implement defensive programming <br>
-
-            //loop through every enemies and check collision and remove 
-            for(int i = 0; i<enemies.size();i++){
-
-                enemies.get(i).updateEnemyState();
-                //if the dodge_man hit the enemies which mean damage by enemies, health level 
-                //going down 1
-                if(collision(enemies.get(i), dodge_man)){
-                    //remove enemies
-                    enemies.remove(i);
-                    //health level going down 1
-                    playerHealth--;
-                    //if health go down than 1 player stop
-                    boomSound();
-                    break;
-                }
-                //so if enemies is way off the screen      <----- to avoid the enemies go too far
-                //remove it break loop                              away, break remove it
-                if (enemies.get(i).getXDirection() <- 100){                       
-                    enemies.remove(i);
-                    break;                       
-                }
-            }
-            
             
              //Let's draw the enemy
              public void drawEnemy (Canvas canvas){
