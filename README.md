@@ -44,6 +44,34 @@ CPRE339_Final_Project
                     break;                       
                 }
             }
+            
+            
+             //Let's draw the enemy
+             public void drawEnemy (Canvas canvas){
+                 try{
+                     canvas.drawBitmap(animation.getDrawingImage(),x,y,null);
+                 }catch (Exception e){}    <-------------- enforce some defensive measures
+             }
+             
+              public void surfaceDestroyed(SurfaceHolder holder){
+
+              boolean retry = true;
+              //to prevent the infinite loop we setup the counter
+              int counter = 0;
+                 while(retry && counter < 1000){
+
+                        try {
+                            counter ++;
+                            mainGameThread.setRunning(false);
+                            mainGameThread.join();
+                            retry = false;
+                            //Set null so garbage collector can pick up the object
+                            mainGameThread = null;
+                        }catch(InterruptedException e) {e.printStackTrace();}
+                        -------- enforce some defensive measures
+                        // try again shutting down the thread
+                    }
+               }
       
 
 #### Code smells <br>
