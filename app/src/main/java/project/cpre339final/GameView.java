@@ -14,6 +14,7 @@ import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Set;
@@ -291,11 +292,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback{
                     //health level going down 1
                     playerHealth--;
                     //if health go down than 1 player stop
-                    if(playerHealth<1) {
-                        //game over stop playing
-                        sounds.play(boomSound, 1.0f, 1.0f, 0, 0, 1.5f);
-                        dodge_man.setPlayerPlaying(false);
-                    }
+                    boomSound();
                     break;
                 }
                 //so if enemies is way off the screen remove it
@@ -316,11 +313,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback{
                     //health level going down 2
                     playerHealth = playerHealth - 2;
                     //if health go down than 1 player stop
-                    if(playerHealth<1) {
-                        //game over stop playing
-                        sounds.play(boomSound, 1.0f, 1.0f, 0, 0, 1.5f);
-                        dodge_man.setPlayerPlaying(false);
-                    }
+                    boomSound();
                     break;
                 }
                 //so if enemies is way off the screen remove it
@@ -383,12 +376,22 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback{
         }
     }
 
+    /* Extract method for method explosion sound */
+    private void boomSound() {
+        if(playerHealth<1) {
+            //game over stop playing
+            sounds.play(boomSound, 1.0f, 1.0f, 0, 0, 1.5f);
+            dodge_man.setPlayerPlaying(false);
+        }
+    }
+
     /*renders the objects into an image which is draw it displayed onto the screen.*/
     public void displayDraw (Canvas canvas){
 
         //To make the background scale all the way (fit into the screen)
         final float scaleFactorX = getWidth()/(width*1.f);
         final float scaleFactorY = getHeight() / (height*1.f);
+
         if(canvas!=null) {
             //create the save state before it scale
             final int saveState = canvas.save();
@@ -422,6 +425,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback{
             }
             canvas.restoreToCount(saveState);
         }
+
 
     }
 
@@ -482,20 +486,13 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback{
         if(!dodge_man.getPlayerPlaying() && createdNewGame && resetGame)
         {
             Paint paint1 = new Paint();
-            Paint paint2 = new Paint();
-            Paint paint3 = new Paint();
-            paint2.setColor(Color.RED);
-            paint3.setColor(Color.DKGRAY);
-            paint2.setStyle(Paint.Style.FILL_AND_STROKE);
-            paint3.setStyle(Paint.Style.FILL);
-            paint2.setTextSize(55);
-            paint3.setTextSize(57);
 
             paint1.setTextSize(40);
             paint1.setTypeface(Typeface.create(Typeface.SANS_SERIF, Typeface.BOLD_ITALIC));
             canvas.drawText("PRESS TO START", width / 2 - 120, height / 2 - 3, paint1);
 
             paint1.setTextSize(18);
+
         }
 
     }

@@ -88,6 +88,8 @@ public class MainGameThread extends Thread {
 
                 if(canvas != null){
                     surfaceHolder.unlockCanvasAndPost(canvas);
+                }else {
+                    System.out.println("canvas is null");
                 }
             }
         }
