@@ -25,12 +25,59 @@ Implement defensive programming
 
 #### Code smells <br>
 
-      When I started code the object class in the very beiging development periods, Classes usually start 
+      When I started code the object class in the beiging development periods, Classes usually start 
       small. But over time, they get bloated as the program grows and for easy testing I usually just put 
       all the require variable and method toghter. To resolve the long class and long method, 
-      <br>
-     Extract all the object class which need the animation and moving detecting. <br> Split to the abstract 
-     class which we got two class <MovingObject Class> <SpriteAnimation>. 
+      Extract all the object class which need the animation and moving detecting method. Split into
+      the abstract class which we got two class <MovingObject Class> <SpriteAnimation>. 
+      
+      In Game of view has too many duplicate line 
+      
+                if(collision(enemies.get(i), dodge_man)){
+                    //remove enemies
+                    enemies.remove(i);
+                    //health level going down 1
+                    playerHealth--;
+                    //Duplicate Line ----------------------------------------------------
+                    if(playerHealth<1) {
+                        //game over stop playing
+                        sounds.play(boomSound, 1.0f, 1.0f, 0, 0, 1.5f);
+                        dodge_man.setPlayerPlaying(false);
+                    } --------------------------------------------------------------------
+                    break;
+                }
+                //so if enemies is way off the screen remove it
+                if (enemies.get(i).getXDirection() <- 100){
+                    enemies.remove(i);
+                    break;
+                }
+
+                enemy2s.get(i).updateEnemy2State();
+                //if the dodge_man hit the enemies which mean damage by enemies, health level going down 1
+                if(collision(enemy2s.get(i), dodge_man)){
+                    //remove enemies
+                    enemy2s.remove(i);
+                    //health level going down 2
+                    playerHealth = playerHealth - 2;
+                    //if health go down than 1 player stop
+                    //Duplicate Line ----------------------------------------------------
+                    if(playerHealth<1) {
+                        //game over stop playing
+                        sounds.play(boomSound, 1.0f, 1.0f, 0, 0, 1.5f);
+                        dodge_man.setPlayerPlaying(false);
+                    } --------------------------------------------------------------------
+                    break;
+                }
+       
+               
+                /* Extract method for method explosion sound */
+                private void boomSound() {
+                    if(playerHealth<1) {
+                        //game over stop playing
+                        sounds.play(boomSound, 1.0f, 1.0f, 0, 0, 1.5f);
+                        dodge_man.setPlayerPlaying(false);
+                    }
+                }
      
      
       
