@@ -68,7 +68,7 @@ CPRE339_Final_Project
                             //Set null so garbage collector can pick up the object
                             mainGameThread = null;
                         }catch(InterruptedException e) {e.printStackTrace();}
-                        -------- enforce some defensive measures
+                           ^-------- enforce some defensive measures
                         // try again shutting down the thread
                     }
                }
