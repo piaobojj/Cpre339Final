@@ -241,5 +241,9 @@ CPRE339_Final_Project
 
 ![alt text](https://github.com/piaobojj/Cpre339Final/blob/master/Screenshot/screen4.png "Logo Title Text 1")
 
+#### Background music of the game and explosion sound sources:
+http://downloads.khinsider.com/
+https://www.freesoundeffects.com/free-sounds/explosion-10070/
+
 
 
