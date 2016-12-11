@@ -2,7 +2,7 @@
 CPRE339_Final_Project
 <br>By: Wen-Chi Hsu.
 <br>Android Game application.
-<br>Last Modified: 12/05/2016
+<br>Last Modified: 12/11/2016
 
 ### Goal:
    Expected to perform from high-level architecture design to detailed software development and/or implementation, and applying what we have learned into software development practice. 
@@ -241,8 +241,8 @@ CPRE339_Final_Project
 
 ![alt text](https://github.com/piaobojj/Cpre339Final/blob/master/Screenshot/screen4.png "Logo Title Text 1")
 
-#### Background music of the game and explosion sound sources:
-http://downloads.khinsider.com/
+#### Background music of the game and explosion sound sources: <br>
+http://downloads.khinsider.com/ <br>
 https://www.freesoundeffects.com/free-sounds/explosion-10070/
 
 
